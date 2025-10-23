@@ -1,35 +1,33 @@
 [aimspice]
 [description]
-310
-Wide-swing cascode current
-
-.include p18_cmos_models_tt.inc
+364
+currentmirror
+.param .param proc_delta = 0.95
+vt_shift = 0.1
 .include p18_model_card.inc
+VDD vdd 0 2 DC
+isrc Iin iin vdd
 
-vdd1 3 0 1V
-vdd2 7 0 1V
 
-I_bias 3 1 50u
-I_in 3 2 50u
+R1 vdd vx 122400
+* DRAIN GATE BULK SOURCE
+M1 M2 vx vx 0 out 0 NMOS W=5u L=1u
+vx 0 0 NMOS W=5u L=1u
+VOUT out 0 DC 0.9
+*.op
+.dc VOUT 0.5 1.5 0.01
+.plot id(m2)
+*.plot i(M2)
+*.print i(M2)
+.end
 
-MN1 7 5 6 0 NMOS L=1U W=1U
-MN2 6 4 0 0 NMOS L=1U W=1U
-MN3 8 2 0 4 NMOS L=1U W=1U
-MN4 2 1 8 5 NMOS L=1U W=1U
-MN5 1 1 0 0 NMOS L=1U W=2U
-
-.plot i(MN1)ur
+PHAT iin iin 0 0 NMOS 1/(n+1)^2
+[options]
+0
 [dc]
 1
-I_bias
-40u
-50u
-0.1u
-[ana]
-1 1
-0
-1 1
-1 1 -3.6E-11 -2.8E-11
-1
-i(vdd2)
+VDD
+X
+X
+X
 [end]

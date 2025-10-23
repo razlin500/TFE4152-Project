@@ -1,6 +1,6 @@
 [aimspice]
 [description]
-310
+338
 Wide-swing cascode current
 
 .include p18_cmos_models_tt.inc
@@ -15,10 +15,11 @@ I_in 3 2 50u
 MN1 7 5 6 0 NMOS L=1U W=1U
 MN2 6 4 0 0 NMOS L=1U W=1U
 MN3 8 2 0 4 NMOS L=1U W=1U
-MN4 2 1 8 5 NMOS L=1U W=1U
-MN5 1 1 0 0 NMOS L=1U W=2U
+MN4 2 1 8 5 NMOS L=1U W=1U Pd=2u Ps=2u
+MN5 1 1 0 0 NMOS L=1U W=2U Pd=2u Ps=2u
 
-.plot i(MN1)ur
+.plot i(MN1)
+.end
 [dc]
 1
 I_bias
