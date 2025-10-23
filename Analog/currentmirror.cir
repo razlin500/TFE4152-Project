@@ -1,5 +1,27 @@
 [aimspice]
 [description]
-16
-Untitled circuit
+267
+Wide-swing cascode current
+
+.include p18_cmos_models_tt.inc
+.include p18_model_card.inc
+
+I_bias 3 1 dc 1u
+I_in 3 2 dc 1u
+
+Q1 7 5 6 0 NMOS L=1U W=1U
+Q2 6 4 0 0 NMOS L=1U W=1U
+Q3 8 2 0 4 NMOS L=1U W=1U
+Q4 2 1 8 5 NMOS L=1U W=1U
+Q5 1 1 0 0 NMOS L=1U W=1U
+
+
+[dc]
+1
+I_bias
+0
+1
+0.1
+[ana]
+1 0
 [end]
