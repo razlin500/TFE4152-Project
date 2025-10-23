@@ -7,7 +7,7 @@
                  *                                           *
                  *********************************************
 
-	Date: Thu Oct 23 12:42:06 2025
+	Date: Thu Oct 23 14:22:41 2025
 	Circuit File: M:\TFE4152-Project\Analog\currentmirror1.cir
 	Analysis: DC Transfer Curves
 
@@ -182,25 +182,21 @@
    167:  
    168:  *end of: p18_model_card.inc
    169:  
-   170:  .param length=0.25u width=2.315u
+   170:  .param length=0.5u width=2.315u
    171:  
-   172:  *VDD1 3 0 1V DC
+   172:  VDD1 vdd 0 1V DC
    173:  VDD2 7 0 1V DC
    174:  
-   175:  * I in+ in-
-   176:  I_bias 3 0	DC 50uA
-   177:  I_in	 3 0 	DC 50uA
-   178:  
-   179:  * DRAIN GATE SOURCE BULK
-   180:  MN1 7 5 6 0 NMOS L=length W=width
-   181:  MN2 6 4 0 0 NMOS L=length W=width
-   182:  MN3 8 2 0 4 NMOS L=length W=width
-   183:  MN4 2 1 8 5 NMOS L=length W=width Pd=4u Ps=4u
-   184:  MN5 1 1 0 0 NMOS L=length W=0.25*width Pd=4u Ps=4u
-   185:  
-   186:  .plot i(MN1)
-   187:  
-   188:  .dc VDD2 0 1 0.01
+   175:  I_bias 1 vdd  DC 50uA
+   176:  I_in	 2 vdd  DC 50uA
+   177:  
+   178:  MN1 7 1 6 0 NMOS L=length W=width
+   179:  MN2 6 2 0 0 NMOS L=length W=width
+   180:  MN3 8 2 0 0 NMOS L=length W=width
+   181:  MN4 2 1 8 0 NMOS L=length W=width
+   182:  MN5 1 1 0 0 NMOS L=length W=0.25*width
+   183:  
+   184:  .dc VDD2 0 1 0.01
 
 ***************************  Model Parameters  ****************************
 
@@ -224,9 +220,9 @@
 
 *************************  Simulation Statistics  *************************
 
-	Total number of iterations...........: 387
-	Total analysis time (sec)............: 0.005
-	Time spent in device loading (sec)...: 0.003
+	Total number of iterations...........: 278
+	Total analysis time (sec)............: 0.006
+	Time spent in device loading (sec)...: 0.001
 	Time spent in L-U decomposition (sec): 0
 	Time spent in matrix reordering (sec): 0
 	Time spent in matrix solving (sec)...: 0
@@ -238,7 +234,8 @@ Circuit: Wide-swing cascode current
 Warning: premature EOF
 Warning: parameter xl not supported; value ignored
 Warning: parameter xw not supported; value ignored
-Warning: Pd = 4e-06 is less than W for mn5 in model nmos.
-Warning: Ps = 4e-06 is less than W for mn5 in model nmos.
-Warning: Node 3 is connected only to current sources
+Warning: Pd = 0 is less than W for mn5 in model nmos.
+Warning: Ps = 0 is less than W for mn5 in model nmos.
+Warning: Pd = 0 is less than W for mn4 in model nmos.
+Warning: Ps = 0 is less than W for mn4 in model nmos.
 
