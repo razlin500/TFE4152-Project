@@ -7,7 +7,7 @@
                  *                                           *
                  *********************************************
 
-	Date: Thu Oct 23 10:02:12 2025
+	Date: Thu Oct 23 11:05:13 2025
 	Circuit File: C:\Users\razli\ikke_onedrive\H2025\TFE4152\TFE4152-Project\Analog\currentmirror.cir
 	Analysis: DC Transfer Curves
 
@@ -182,11 +182,20 @@
    167:  
    168:  *end of: p18_model_card.inc
    169:  
-   170:  I_bias 0 1 dc 1u
-   171:  I_in 0 2 dc 1u
+   170:  vdd1 3 0 1V
+   171:  vdd2 7 0 1V
    172:  
-   173:  .plot dc I_bias
-   174:  .dc I_bias 0 1 0.1
+   173:  I_bias 3 1 50u
+   174:  I_in 3 2 50u
+   175:  
+   176:  MN1 7 5 6 0 NMOS L=1U W=1U
+   177:  MN2 6 4 0 0 NMOS L=1U W=1U
+   178:  MN3 8 2 0 4 NMOS L=1U W=1U
+   179:  MN4 2 1 8 5 NMOS L=1U W=1U
+   180:  MN5 1 1 0 0 NMOS L=1U W=2U
+   181:  
+   182:  .plot i(MN1)ur
+   183:  .dc I_bias 40u 50u 0.1u
 
 ***************************  Model Parameters  ****************************
 
@@ -198,9 +207,9 @@
 **************************  Analysis Parameters  **************************
 
 	Source name #1 .. : I_bias
-	Start value #1 .. : 0
-	End value #1 .... : 1
-	Increment value #1: 0.1
+	Start value #1 .. : 40u
+	End value #1 .... : 50u
+	Increment value #1: 0.1u
 
 
 
@@ -210,9 +219,9 @@
 
 *************************  Simulation Statistics  *************************
 
-	Total number of iterations...........: 0
-	Total analysis time (sec)............: 0
-	Time spent in device loading (sec)...: 0
+	Total number of iterations...........: 427
+	Total analysis time (sec)............: 0.001
+	Time spent in device loading (sec)...: 0.001
 	Time spent in L-U decomposition (sec): 0
 	Time spent in matrix reordering (sec): 0
 	Time spent in matrix solving (sec)...: 0
@@ -222,7 +231,15 @@
 Circuit: Wide-swing cascode current
 
 Warning: premature EOF
-Warning: Node 1 has less than two connections
-Warning: Node 2 has less than two connections
-Access violation
-Simulation aborted
+Warning: parameter xl not supported; value ignored
+Warning: parameter xw not supported; value ignored
+Warning: Pd = 0 is less than W for mn5 in model nmos.
+Warning: Ps = 0 is less than W for mn5 in model nmos.
+Warning: Pd = 0 is less than W for mn4 in model nmos.
+Warning: Ps = 0 is less than W for mn4 in model nmos.
+Warning: Gmin stepping failed
+Warning: source stepping failed
+doAnalyses: Too many iterations without convergence
+
+run simulation aborted
+
