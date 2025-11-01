@@ -1,0 +1,36 @@
+[aimspice]
+[description]
+392
+Wide-swing cascode current
+
+.include p18_cmos_models_tt.inc
+.include p18_model_card.inc
+
+.param length=0.5u width=2.315u
+
+VDD1 vdd 0 1V DC
+VDD2 7 0 1V DC
+
+I_bias 1 vdd  DC 50uA
+I_in	 2 vdd  DC 50uA
+
+MN1 7 1 6 0 NMOS L=length W=width
+MN2 6 2 0 0 NMOS L=length W=width
+MN3 8 2 0 0 NMOS L=length W=width
+MN4 2 1 8 0 NMOS L=length W=width
+MN5 1 1 0 0 NMOS L=length W=0.25*width
+
+[dc]
+1
+VDD2
+0
+1
+0.01
+[ana]
+1 1
+0
+1 1
+1 1 -4E-12 0
+1
+i(vdd2)
+[end]
