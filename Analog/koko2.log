@@ -7,16 +7,16 @@
                  *                                           *
                  *********************************************
 
-	Date: Thu Oct 23 15:04:47 2025
-	Circuit File: C:\Users\razli\ikke_onedrive\H2025\TFE4152\TFE4152-Project\Analog\kok.cir
+	Date: Thu Oct 23 15:29:46 2025
+	Circuit File: C:\Users\razli\ikke_onedrive\H2025\TFE4152\TFE4152-Project\Analog\koko2.cir
 	Analysis: DC Transfer Curves
 
 **************************  Circuit Description  **************************
 
      1:  *Current mirror
-     2:  *include p18_cmos_models_tt.inc
-     3:  .param proc_delta = 1
-     4:  .param vt_shift = 0
+     2:  *include p18_cmos_models_ff.inc
+     3:  .param proc_delta = 1.05
+     4:  .param vt_shift = -0.1
      5:  *include p18_model_card.inc
      6:  * p18 model card
      7:  .MODEL NMOS NMOS  								
@@ -98,32 +98,32 @@
     83:  + PKETA	=	-6.41E-03	KF	=	1.29E-29	PETA0	=	7.31E-05
     84:  
     85:  *end of: p18_model_card.inc
-    86:  *end of: p18_cmos_models_tt.inc
+    86:  *end of: p18_cmos_models_ff.inc
     87:  
     88:  .param length=0.5u width=4.63u 
     89:  
-    90:  Vdd 1 0 1.0V
+    90:  *Vdd 1 0 1.0V
     91:  
     92:  Vout 6 0 1.0V
     93:  
     94:  
-    95:  IB 1 2 45u
+    95:  IB 1 2 dc 45u
     96:  
     97:  Iin 1 4 50u
     98:  
     99:  
    100:  M1 6 2 7 0 NMOS L=length W=width
    101:  
-   102:  M2 7 4 0 0 NMOS L=0.5length W=0.5width
+   102:  M2 7 4 0 0 NMOS L={length/2} W={width/2}
    103:  
-   104:  M3 5 4 0 0 NMOS L=0.5length W=0.5width
+   104:  M3 5 4 0 0 NMOS L={length/2} W={width/2}
    105:  
    106:  M4 4 2 5 0 NMOS L=length W=width
    107:  
-   108:  M5 2 2 0 0 NMOS L=length W=0.25width
+   108:  M5 2 2 0 0 NMOS L=length W={width/4}
    109:  
    110:  .plot dc id(M1)
-   111:  .dc Vout 0 1 0.001
+   111:  .dc Iin 40u 50u 0.01u
 
 ***************************  Model Parameters  ****************************
 
@@ -134,25 +134,26 @@
 
 **************************  Analysis Parameters  **************************
 
-	Source name #1 .. : Vout
-	Start value #1 .. : 0
-	End value #1 .... : 1
-	Increment value #1: 0.001
+	Source name #1 .. : Iin
+	Start value #1 .. : 40u
+	End value #1 .... : 50u
+	Increment value #1: 0.01u
 
 
 
 **************  Options (Only those different from default)  **************
 
+	Tnom:        50
 
 
 *************************  Simulation Statistics  *************************
 
-	Total number of iterations...........: 385
-	Total analysis time (sec)............: 0.019
-	Time spent in device loading (sec)...: 0.001
+	Total number of iterations...........: 2186
+	Total analysis time (sec)............: 0.026
+	Time spent in device loading (sec)...: 0.005
 	Time spent in L-U decomposition (sec): 0
 	Time spent in matrix reordering (sec): 0
-	Time spent in matrix solving (sec)...: 0
+	Time spent in matrix solving (sec)...: 0.002
 
 ***************************  Kernel Messages  *****************************
 
@@ -167,16 +168,5 @@ Warning: Pd = 0 is less than W for m4 in model nmos.
 Warning: Ps = 0 is less than W for m4 in model nmos.
 Warning: Pd = 0 is less than W for m3 in model nmos.
 Warning: Ps = 0 is less than W for m3 in model nmos.
-Warning: singular matrix:  check nodes m4#drain and m4#drain
-
-Warning: singular matrix:  check nodes m4#drain and m4#drain
-
-Warning: Gmin step failed
-Warning: singular matrix:  check nodes m4#drain and m4#drain
-
-Warning: Gmin stepping failed
-Warning: source stepping failed
-doAnalyses: Too many iterations without convergence
-
-run simulation aborted
+Warning: Node 1 is connected only to current sources
 
