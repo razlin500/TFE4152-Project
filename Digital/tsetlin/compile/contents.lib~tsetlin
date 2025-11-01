@@ -1,11 +1,14 @@
-2
+7
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 3 "./../src/D_FlipFlop.v" 25 D_FlipFlop
 ~A 1 "./../src/D_FlipFlop.v" 25 D_FlipFlop
+~M 0 "" 0 \\Tsetlin_machine
+~A 0 "" 0 \\Tsetlin_machine
+~M 3 "./../compile/Tsetlin machine.v" 30 \\\Tsetlin_machine \
+~A 1 "./../compile/Tsetlin machine.v" 30 \\\Tsetlin_machine \
 ~M 3 "./../src/combinatorics.v" 25 combinatorics
 ~A 1 "./../src/combinatorics.v" 25 combinatorics
 ~M 3 "./../src/getAlpha.v" 25 getAlpha
-~A 1 "./../src/getAlpha.v" 25 getAlpha
 ~M 3 "./../src/register.v" 25 register
 ~A 1 "./../src/register.v" 25 register

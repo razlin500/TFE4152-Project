@@ -1,0 +1,4 @@
+verilog tsetlin "..\src\combinatorics.v"
+verilog tsetlin "..\src\register.v"
+verilog tsetlin "..\src\D_FlipFlop.v"
+verilog tsetlin "..\compile\Tsetlin machine.v"

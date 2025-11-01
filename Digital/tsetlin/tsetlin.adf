@@ -3,10 +3,13 @@ Current Flow=Multivendor
 VCS=0
 version=3
 Current Config=compile
+
 [Configurations]
 compile=tsetlin
+
 [Library]
 tsetlin=.\tsetlin\tsetlin.lib
+
 [Settings]
 AccessRead=0
 AccessReadWrite=0
@@ -19,17 +22,17 @@ ENABLE_ADV_DATAFLOW=0
 FLOW_TYPE=HDL
 LANGUAGE=VERILOG
 REFRESH_FLOW=1
-FLOWTOOLS=ONLY_IMPL
+FLOWTOOLS=IMPL_WITH_SYNTH
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
 DVM_DISPLAY=NO
 CSYNTH_STATUS=NONE
 IMPL_TOOL=
-SYNTH_TOOL=
+SYNTH_TOOL=MV_XST146
 CSYNTH_TOOL=
-PHYSSYNTH_TOOL=MV_PALACE25
-FAMILY=Quartus APEX20K
+PHYSSYNTH_TOOL=MV_PLANAHEAD146
+FAMILY=Xilinx14x ARTIX7
 PHYSSYNTH_STATUS=NONE
 SYNTH_STATUS=NONE
 IMPL_STATUS=NONE
@@ -38,50 +41,67 @@ PCBINTERFACE_STATUS=NONE
 FUNCTIONAL_SIMULATION_STATUS=
 POSTSYNTHESIS_SIMULATION_STATUS=
 TIMING_SIMULATION_STATUS=
+RUN_MODE_SYNTH=0
+
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
+
 [LocalVhdlSets]
 CompileWithDebug=0
+
 [$LibMap$]
 tsetlin=.
-Active_lib=
-xilinxun=
-UnlinkedDesignLibrary=
-DESIGNS=
-[Files]
-/combinatorics.v=-1
-/register.v=-1
-/getAlpha.v=-1
-/D_FlipFlop.v=-1
-[Files.Data]
-.\src\combinatorics.v=Verilog Source Code
-.\src\register.v=Verilog Source Code
-.\src\getAlpha.v=Verilog Source Code
-.\src\D_FlipFlop.v=Verilog Source Code
+Active_lib=ARTIX7
+xilinxun=ARTIX7
+UnlinkedDesignLibrary=ARTIX7
+DESIGNS=ARTIX7
+
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+
+[PCB_INTERFACE]
+FAMILY=
+
+
+
+
+[Files]
+/combinatorics.v=-1
+/register.v=-1
+/D_FlipFlop.v=-1
+/Tsetlin machine.bde=-1
+
+[Files.Data]
+.\src\combinatorics.v=Verilog Source Code
+.\src\register.v=Verilog Source Code
+.\src\D_FlipFlop.v=Verilog Source Code
+.\src\Tsetlin machine.bde=Block Diagram
+.\compile\Tsetlin machine.v=Verilog Source Code
+
 [SYNTHESIS]
 TOPLEVEL=
-FAMILY=Quartus APEX20K
+FAMILY=Xilinx14x ARTIX7
 DEVICE=
 SPEED=
+OBSOLETE_ALIASES=1
 [PHYS_SYNTHESIS]
-FAMILY=Quartus APEX20K
+FAMILY=Xilinx14x ARTIX7
 DEVICE=
 SPEED=
 SCRIPTS_COPIED=0
 [IMPLEMENTATION]
 FLOW_STEPS_RESET=1
-FAMILY=Quartus APEX20K
+FAMILY=Xilinx14x ARTIX7
 DEVICE=
 SPEED=
+[file_out:/Tsetlin machine.bde]
+/..\compile\Tsetlin machine.v=-1
 [Verilog Library]
-APEX20K_ver=
-lpm_ver=
-[PCB_INTERFACE]
-FAMILY=
+ARTIX7=

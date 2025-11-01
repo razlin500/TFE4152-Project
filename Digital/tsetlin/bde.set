@@ -80,6 +80,9 @@ PAGE_DEFAULT_HEIGHT
 PAGE_DEFAULT_WIDTH
 2200
 ##########
+PRIMARY DESIGN LIBRARY
+tsetlin
+##########
 TERMINAL BUFFER
 Buffer
 ##########

@@ -17,8 +17,8 @@ UPDATEPROGRESS 88
 UPDATEPROGRESS 92
 UPDATEPROGRESS 96
 UPDATEPROGRESS 100
-MESSAGE "Unit top modules: combinatorics register getAlpha D_FlipFlop."
-MESSAGE "$root top modules: D_FlipFlop combinatorics register getAlpha."
+MESSAGE "Unit top modules: combinatorics register D_FlipFlop \\Tsetlin_machine."
+MESSAGE "$root top modules: D_FlipFlop combinatorics register getAlpha \\Tsetlin_machine."
 ENDPROGRESS Compiling...
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
 MESSAGE "done"
