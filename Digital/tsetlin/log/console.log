@@ -1,0 +1,66 @@
+alog -O2 -sve   -work tsetlin $dsn/src/D_FlipFlop.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2858 D_FlipFlop.v : (38, 8): Q is not a valid left-hand side of a procedural assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work tsetlin $dsn/src/D_FlipFlop.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2505 D_FlipFlop.v : (28, 9): Duplicate identifier: Q
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work tsetlin $dsn/src/D_FlipFlop.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: D_FlipFlop.
+# $root top modules: D_FlipFlop.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/register.v $dsn/src/getAlpha.v $dsn/src/D_FlipFlop.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: combinatorics register getAlpha D_FlipFlop.
+# $root top modules: D_FlipFlop combinatorics register getAlpha.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design: Warning: Library APEX20K_ver required for the selected device family has not been installed.
+# Design: Warning: Library APEX20K_ver required for the selected device family has not been installed.
+# Error: 'palace.exe' not found. Choose Tools | Preferences and specify the tool location in the Flows | Integrated Tools category. NOTE: You must have administrative privileges to modify flowchart configuration settings.
+# Error: PALACE not installed!
+# Error: 'palace.exe' not found. Choose Tools | Preferences and specify the tool location in the Flows | Integrated Tools category. NOTE: You must have administrative privileges to modify flowchart configuration settings.
+# Error: PALACE not installed!
+# Error: 'palace.exe' not found. Choose Tools | Preferences and specify the tool location in the Flows | Integrated Tools category. NOTE: You must have administrative privileges to modify flowchart configuration settings.
+# Error: PALACE not installed!
+# Error: 'palace.exe' not found. Choose Tools | Preferences and specify the tool location in the Flows | Integrated Tools category. NOTE: You must have administrative privileges to modify flowchart configuration settings.
+# Error: PALACE not installed!
+# Error: 'palace.exe' not found. Choose Tools | Preferences and specify the tool location in the Flows | Integrated Tools category. NOTE: You must have administrative privileges to modify flowchart configuration settings.
+# Error: PALACE not installed!
+# Error: 'palace.exe' not found. Choose Tools | Preferences and specify the tool location in the Flows | Integrated Tools category. NOTE: You must have administrative privileges to modify flowchart configuration settings.
+# Error: PALACE not installed!
+# Error: 'palace.exe' not found. Choose Tools | Preferences and specify the tool location in the Flows | Integrated Tools category. NOTE: You must have administrative privileges to modify flowchart configuration settings.
+# Error: PALACE not installed!
+# Error: 'palace.exe' not found. Choose Tools | Preferences and specify the tool location in the Flows | Integrated Tools category. NOTE: You must have administrative privileges to modify flowchart configuration settings.
+# Error: PALACE not installed!
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Error: You do not have valid license to run C Code Debug.
+# Error: Contact Aldec for ordering information sales@aldec.com
