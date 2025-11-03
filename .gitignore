@@ -2,4 +2,4 @@
 
 !.gitignore
 !./Analog
-!/Digital/*.wsw
+!./Digital/*.wsw
