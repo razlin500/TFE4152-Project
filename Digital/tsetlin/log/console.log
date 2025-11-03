@@ -259,4 +259,133 @@ alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/regist
 # Info: VCP2876 combinatorics.v : (59, 7): Implicit net declaration, symbol u2 has not been declared in module combinatorics.
 # Info: VCP2876 combinatorics.v : (60, 10): Implicit net declaration, symbol notb0 has not been declared in module combinatorics.
 # Info: VCP2876 combinatorics.v : (61, 7): Implicit net declaration, symbol u3 has not been declared in module combinatorics.
-# Info: VCP2876 combinatorics.v : (64, 7): Implicit net declaration, symbol v1 has not been declared in module combinator
+# Info: VCP2876 combinatorics.v : (64, 7): Implicit net declaration, symbol v1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (65, 7): Implicit net declaration, symbol v2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (66, 7): Implicit net declaration, symbol v3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (69, 7): Implicit net declaration, symbol w1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (70, 7): Implicit net declaration, symbol w2 has not been declared in module combinatorics.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: combinatorics register D_FlipFlop \\Tsetlin_machine.
+# $root top modules: D_FlipFlop combinatorics register getAlpha \\Tsetlin_machine.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+combinatorics combinatorics
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 19 (100.00%) primitives and 0 other processes in SLP
+# SLP: 22 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5780 kB (elbread=1023 elab2=4611 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location m:\TFE4152-Project\Digital\tsetlin\src\wave.asdb
+#  11:00, mandag 3. november 2025
+#  Simulation has been initialized
+#  Selected Top-Level: combinatorics (combinatorics)
+# Waveform file 'm:/TFE4152-Project/Digital/tsetlin/src/TT_Simulation.awc' connected to 'm:/TFE4152-Project/Digital/tsetlin/src/wave.asdb'.
+# 8 signal(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# KERNEL: Error: KERNEL_0166 "/combinatorics/b2" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/b2" with formula "0 0 fs, 1 100000000 fs -r 200000000 fs".
+# KERNEL: Error: KERNEL_0166 "/combinatorics/b2" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/b2" with formula "0 0 fs, 1 100000000 fs -r 200000000 fs".
+# KERNEL: Error: KERNEL_0166 "/combinatorics/b2" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/b2" with formula "0 0 fs, 1 100000000 fs -r 200000000 fs".
+# KERNEL: Error: KERNEL_0166 "/combinatorics/b2" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/b2" with formula "0 0 fs, 1 100000000 fs -r 200000000 fs".
+# KERNEL: Error: KERNEL_0166 "/combinatorics/b2" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/b2" with formula "0 0 fs, 1 100000000 fs -r 200000000 fs".
+# KERNEL: Error: KERNEL_0166 "/combinatorics/b2" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/b2" with formula "0 0 fs, 1 100000000 fs -r 200000000 fs".
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run @600ns
+# KERNEL: stopped at time: 600 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+combinatorics combinatorics
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'combinatorics' of entity 'combinatorics' not found in library 'tsetlin'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: ULM_0000: Cannot open "library.cfg" file, path: m:\TFE4152-Project\Digital\tsetlin\projlib.cfg
+# Error: asim: cannot select specified top-level
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/register.v $dsn/src/D_FlipFlop.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+acom -O3 -work tsetlin -2002  "$dsn/src/Tsetlin machine.bde"
+# Compile...
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/TB_combinatorics.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Adding file m:\TFE4152-Project\Digital\tsetlin\src\TT_Simulation.awc ... Done
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/register.v $dsn/src/D_FlipFlop.v "$dsn/src/Tsetlin machine.bde" $dsn/src/TB_combinatorics.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# DRC: Checking file 'm:\TFE4152-Project\Digital\tsetlin\src\Tsetlin machine.bde'.
+# DRC: Warning: Tsetlin machine.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating m:\TFE4152-Project\Digital\tsetlin\compile\Tsetlin machine.v from m:\TFE4152-Project\Digital\tsetlin\src\Tsetlin machine.bde ...
+# Generation successful
+# Error: ALOG: Cannot initialize ULM with given configuration file `m:/TFE4152-Project/Digital/tsetlin/projlib.cfg'.
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/register.v $dsn/src/D_FlipFlop.v "$dsn/src/Tsetlin machine.bde" $dsn/src/TB_combinatorics.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Error: ALOG: Cannot initialize ULM with given configuration file `m:/TFE4152-Project/Digital/tsetlin/projlib.cfg'.
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/register.v $dsn/src/D_FlipFlop.v "$dsn/src/Tsetlin machine.bde" $dsn/src/TB_combinatorics.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# DRC: Checking file 'm:\TFE4152-Project\Digital\tsetlin\src\Tsetlin machine.bde'.
+# DRC: Tsetlin machine.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating m:\TFE4152-Project\Digital\tsetlin\compile\Tsetlin machine.v from m:\TFE4152-Project\Digital\tsetlin\src\Tsetlin machine.bde ...
+# Generation successful
+# Error: ALOG: Cannot initialize ULM with given configuration file `m:/TFE4152-Project/Digital/tsetlin/projlib.cfg'.
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/register.v $dsn/src/D_FlipFlop.v "$dsn/src/Tsetlin machine.bde" $dsn/src/TB_combinatorics.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Error: ALOG: Cannot initialize ULM with given configuration file `m:/TFE4152-Project/Digital/tsetlin/projlib.cfg'.
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/register.v $dsn/src/D_FlipFlop.v "$dsn/src/Tsetlin machine.bde" $dsn/src/TB_combinatorics.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Error: ALOG: Cannot initialize ULM with given configuration file `m:/TFE4152-Project/Digital/tsetlin/projlib.cfg'.
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/TB_combinatorics.v
+# Warning: The source i
