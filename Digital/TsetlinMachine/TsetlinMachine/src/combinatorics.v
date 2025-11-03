@@ -1,54 +1,73 @@
 //-----------------------------------------------------------------------------
 //
 // Title       : combinatorics
-// Design      : TsetlinMachine
-// Author      : Rasmus Nummelin
-// Company     : NTNU
+// Design      : tsetlin
+// Author      : 
+// Company     : 
 //
 //-----------------------------------------------------------------------------
 //
-// File        : C:/Users/razli/ikke_onedrive/H2025/TFE4152/TFE4152-Project/Digital/TsetlinMachine/TsetlinMachine/src/combinatorics.v
-// Generated   : Mon Nov  3 12:23:53 2025
-// From        : Interface description file
-// By          : ItfToHdl ver. 1.0
+// File        : c:\My_Designs\TFE4152\tsetlin\src\combinatorics.v
+// Generated   : Thu Oct 30 10:59:53 2025
+// From        : interface description file
+// By          : Itf2Vhdl ver. 1.22
 //
 //-----------------------------------------------------------------------------
 //
 // Description : 
 //
 //-----------------------------------------------------------------------------
-
-`timescale 1ps / 1ps
+`timescale 1 ns / 1 ps
 
 //{{ Section below this comment is automatically maintained
-//    and may be overwritten
+//   and may be overwritten
 //{module {combinatorics}}
+module combinatorics ( beta ,b2 ,b1 ,b0 ,b2o ,b1o ,b0o , alpha);
 
-module combinatorics ( beta ,b0 ,b1 ,b2 ,b0o ,b1o ,b2o ,alpha );
-
-input beta;
-wire beta;
-input b0;
-wire b0;
-input b1;
-wire b1;
-input b2;
-wire b2;
-output b0o;
-wire b0o;
-output b1o;
-wire b1o;
-output b2o;
-wire b2o;
+output b2o ;
+wire b2o ;
+output b1o ;
+wire b1o ;
+output b0o ;
+wire b0o ;
 output alpha;
 wire alpha;
 
+input beta ;
+wire beta ;
+input b2 ;
+wire b2 ;
+input b1 ;
+wire b1 ;
+input b0 ;
+wire b0 ;
+
+
 //}} End of automatically maintained section
 
-// Added some more text here
+// -- Enter your statements here -- //
 
-// Ny test
+not(notb1, b1);
+and(t1, b2, notb1, beta);
+and(t2, b2, notb1, b0);
+not(notb2, b2);
+and(t3, notb2, b1, b0, beta);  
+and(b2o, t1, t2, t3);
 
-// Enter your statements here //
+not(notbeta, beta);
+and(u1, notb2, b1, notbeta);
+and(u2, notb2, b0, notbeta);
+not(notb0, b0);
+and(u3, b2, notb1, notb0, notbeta);
+and(b2o, u1, u2, u3);
+
+and(v1, notb2, notb0, beta);
+and(v2, notb2, notb0, notbeta);
+and(v3, b2, notb1, notb0);
+and(b0o, v1, v2, t1, v3);
+
+and(w1, notb2, b1, notb0, notbeta);
+and(w2, b2, notb1);
+and(alpha, w1, t3 ,w2);
 
 endmodule
