@@ -1,17 +1,4 @@
-# Ignore everything
-*
 
-# Don't ignore .gitignore
-!.gitignore
-
-# Don't ignore Analog folder and its contents
-!Analog/
-!Analog/**
-
-# Allow the .wsw file in Digital folder
-!Digital/
-!Digital/*.wsw
-
-# But ignore everything else in Digital
-Digital/*
-!Digital/*.wsw
+compile/
+log/
+Digital/tsetlin/tsetlin/
