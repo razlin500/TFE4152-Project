@@ -45,6 +45,8 @@ wire alpha;
 
 //}} End of automatically maintained section
 
+// Added some more text here
+
 // Enter your statements here //
 
 endmodule
