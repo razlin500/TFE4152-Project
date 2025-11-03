@@ -101,7 +101,7 @@ FLOW_STEPS_RESET=1
 FAMILY=Xilinx14x ARTIX7
 DEVICE=
 SPEED=
-[file_out:/Tsetlin machine.bde]
-/..\compile\Tsetlin machine.v=-1
 [Verilog Library]
 ARTIX7=
+[file_out:/Tsetlin machine.bde]
+/..\compile\Tsetlin machine.v=-1
