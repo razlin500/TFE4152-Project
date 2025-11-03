@@ -34,7 +34,7 @@ CSYNTH_TOOL=
 PHYSSYNTH_TOOL=MV_PLANAHEAD146
 FAMILY=Xilinx14x ARTIX7
 PHYSSYNTH_STATUS=NONE
-SYNTH_STATUS=NONE
+SYNTH_STATUS=none
 IMPL_STATUS=NONE
 VerilogDirsChanged=1
 PCBINTERFACE_STATUS=NONE
@@ -65,25 +65,8 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
-
 [PCB_INTERFACE]
 FAMILY=
-
-
-
-
-[Files]
-/combinatorics.v=-1
-/register.v=-1
-/D_FlipFlop.v=-1
-/Tsetlin machine.bde=-1
-
-[Files.Data]
-.\src\combinatorics.v=Verilog Source Code
-.\src\register.v=Verilog Source Code
-.\src\D_FlipFlop.v=Verilog Source Code
-.\src\Tsetlin machine.bde=Block Diagram
-.\compile\Tsetlin machine.v=Verilog Source Code
 
 [SYNTHESIS]
 TOPLEVEL=
@@ -91,17 +74,36 @@ FAMILY=Xilinx14x ARTIX7
 DEVICE=
 SPEED=
 OBSOLETE_ALIASES=1
+
 [PHYS_SYNTHESIS]
 FAMILY=Xilinx14x ARTIX7
 DEVICE=
 SPEED=
 SCRIPTS_COPIED=0
+
 [IMPLEMENTATION]
 FLOW_STEPS_RESET=1
 FAMILY=Xilinx14x ARTIX7
 DEVICE=
 SPEED=
+
 [Verilog Library]
 ARTIX7=
+
+[Files]
+/combinatorics.v=-1
+/register.v=-1
+/D_FlipFlop.v=-1
+/Tsetlin machine.bde=-1
+/TT_Simulation.awc=-1
+
+[Files.Data]
+.\src\combinatorics.v=Verilog Source Code
+.\src\register.v=Verilog Source Code
+.\src\D_FlipFlop.v=Verilog Source Code
+.\src\Tsetlin machine.bde=Block Diagram
+.\src\TT_Simulation.awc=Accelerated Waveform Configuration
+.\compile\Tsetlin machine.v=Verilog Source Code
+
 [file_out:/Tsetlin machine.bde]
 /..\compile\Tsetlin machine.v=-1

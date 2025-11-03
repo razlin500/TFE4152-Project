@@ -8,7 +8,7 @@
 //-----------------------------------------------------------------------------
 //
 // File        : m:\TFE4152-Project\Digital\tsetlin\compile\Tsetlin machine.v
-// Generated   : Sat Nov  1 14:04:18 2025
+// Generated   : Mon Nov  3 10:52:51 2025
 // From        : m:\TFE4152-Project\Digital\tsetlin\src\Tsetlin machine.bde
 // By          : Bde2Verilog ver. 2.01
 //

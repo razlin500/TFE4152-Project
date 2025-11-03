@@ -2,7 +2,7 @@ SCHM0105
 
 HEADER
 {
- FREEID 69
+ FREEID 88
  VARIABLES
  {
   #BLOCKTABLE_FILE="#table.bde"
@@ -98,7 +98,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  52, 0, 0
+  TEXT  71, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -109,7 +109,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  53, 0, 0
+  TEXT  72, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -120,7 +120,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  54, 0, 0
+  TEXT  73, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -130,7 +130,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  55, 0, 0
+  TEXT  74, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -142,7 +142,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  56, 0, 0
+  TEXT  75, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -155,7 +155,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  57, 0, 0
+  TEXT  76, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -165,7 +165,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  58, 0, 0
+  TEXT  77, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -177,7 +177,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  59, 0, 0
+  TEXT  78, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -187,7 +187,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  60, 0, 0
+  TEXT  79, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -198,7 +198,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  61, 0, 0
+  GROUP  80, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -210,7 +210,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  62, 0, 0
+  GROUP  81, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -222,7 +222,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  63, 0, 0
+  GROUP  82, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -234,7 +234,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  64, 0, 0
+  GROUP  83, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -246,7 +246,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  65, 0, 0
+  GROUP  84, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -258,7 +258,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  66, 0, 0
+  GROUP  85, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -269,7 +269,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  67, 0, 0
+  GROUP  86, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -280,7 +280,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  68, 0, 0
+  BMPPICT  87, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

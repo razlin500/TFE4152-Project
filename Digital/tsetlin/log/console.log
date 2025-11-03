@@ -1,0 +1,262 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+combinatorics combinatorics
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 combinatorics.v : (50, 10): Implicit net declaration, symbol notb1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (51, 7): Implicit net declaration, symbol t1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (52, 7): Implicit net declaration, symbol t2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (53, 10): Implicit net declaration, symbol notb2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (54, 7): Implicit net declaration, symbol t3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (57, 12): Implicit net declaration, symbol notbeta has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (58, 7): Implicit net declaration, symbol u1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (59, 7): Implicit net declaration, symbol u2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (60, 10): Implicit net declaration, symbol notb0 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (61, 7): Implicit net declaration, symbol u3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (64, 7): Implicit net declaration, symbol v1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (65, 7): Implicit net declaration, symbol v2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (66, 7): Implicit net declaration, symbol v3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (69, 7): Implicit net declaration, symbol w1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (70, 7): Implicit net declaration, symbol w2 has not been declared in module combinatorics.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: combinatorics.
+# $root top modules: D_FlipFlop combinatorics register getAlpha \\Tsetlin_machine.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 19 (100.00%) primitives and 0 other processes in SLP
+# SLP: 22 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5780 kB (elbread=1023 elab2=4611 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location m:\TFE4152-Project\Digital\tsetlin\src\wave.asdb
+#  10:43, mandag 3. november 2025
+#  Simulation has been initialized
+#  Selected Top-Level: combinatorics (combinatorics)
+# 5 signal(s) traced.
+# Waveform file 'm:/TFE4152-Project/Digital/tsetlin/src/TT_Simulation.awc' connected to 'm:/TFE4152-Project/Digital/tsetlin/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/combinatorics/beta' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/combinatorics/b2' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/combinatorics/b1' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/combinatorics/b0' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/combinatorics/b2o' has already been traced.
+# 0 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# Adding file m:\TFE4152-Project\Digital\tsetlin\src\TT_Simulation.awc ... Done
+# KERNEL: Error: KERNEL_0166 "/combinatorics/beta" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/beta" with formula "0 0 fs, 1 50000000 fs -r 100000000 fs".
+run
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 combinatorics.v : (50, 10): Implicit net declaration, symbol notb1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (51, 7): Implicit net declaration, symbol t1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (52, 7): Implicit net declaration, symbol t2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (53, 10): Implicit net declaration, symbol notb2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (54, 7): Implicit net declaration, symbol t3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (57, 12): Implicit net declaration, symbol notbeta has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (58, 7): Implicit net declaration, symbol u1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (59, 7): Implicit net declaration, symbol u2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (60, 10): Implicit net declaration, symbol notb0 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (61, 7): Implicit net declaration, symbol u3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (64, 7): Implicit net declaration, symbol v1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (65, 7): Implicit net declaration, symbol v2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (66, 7): Implicit net declaration, symbol v3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (69, 7): Implicit net declaration, symbol w1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (70, 7): Implicit net declaration, symbol w2 has not been declared in module combinatorics.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: combinatorics.
+# $root top modules: D_FlipFlop combinatorics register getAlpha \\Tsetlin_machine.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 19 (100.00%) primitives and 0 other processes in SLP
+# SLP: 22 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5780 kB (elbread=1023 elab2=4611 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location m:\TFE4152-Project\Digital\tsetlin\src\wave.asdb
+#  10:46, mandag 3. november 2025
+#  Simulation has been initialized
+#  Selected Top-Level: combinatorics (combinatorics)
+# Waveform file 'm:/TFE4152-Project/Digital/tsetlin/src/TT_Simulation.awc' connected to 'm:/TFE4152-Project/Digital/tsetlin/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# KERNEL: Error: KERNEL_0166 "/combinatorics/beta" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/beta" with formula "0 0 fs, 1 50000000 fs -r 100000000 fs".
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# KERNEL: Error: KERNEL_0166 "/combinatorics/beta" does not have write access. Use switch +access +w_nets for this region.
+# Error: Cannot force signal "/combinatorics/beta" with formula "0 0 fs, 1 50000000 fs -r 100000000 fs".
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run @600ns
+# KERNEL: stopped at time: 600 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+combinatorics combinatorics
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 19 (100.00%) primitives and 0 other processes in SLP
+# SLP: 22 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5780 kB (elbread=1023 elab2=4611 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location m:\TFE4152-Project\Digital\tsetlin\src\wave.asdb
+#  10:50, mandag 3. november 2025
+#  Simulation has been initialized
+#  Selected Top-Level: combinatorics (combinatorics)
+# Waveform file 'm:/TFE4152-Project/Digital/tsetlin/src/TT_Simulation.awc' connected to 'm:/TFE4152-Project/Digital/tsetlin/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped
+# Warning: WAVEFORM: Object matching /combinatorics/beta not found in m:/TFE4152-Project/Digital/tsetlin/src/wave.asdb.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Warning: WAVEFORM: Object matching /combinatorics/beta not found in m:/TFE4152-Project/Digital/tsetlin/src/wave.asdb.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+combinatorics combinatorics
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 19 (100.00%) primitives and 0 other processes in SLP
+# SLP: 22 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5780 kB (elbread=1023 elab2=4611 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location m:\TFE4152-Project\Digital\tsetlin\src\wave.asdb
+#  10:51, mandag 3. november 2025
+#  Simulation has been initialized
+#  Selected Top-Level: combinatorics (combinatorics)
+# Waveform file 'm:/TFE4152-Project/Digital/tsetlin/src/TT_Simulation.awc' connected to 'm:/TFE4152-Project/Digital/tsetlin/src/wave.asdb'.
+# 8 signal(s) traced.
+alog -O2 -l ARTIX7 -sve   -work tsetlin $dsn/src/combinatorics.v $dsn/src/register.v $dsn/src/D_FlipFlop.v "$dsn/src/Tsetlin machine.bde"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# DRC: Checking file 'm:\TFE4152-Project\Digital\tsetlin\src\Tsetlin machine.bde'.
+# DRC: Warning: Tsetlin machine.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating m:\TFE4152-Project\Digital\tsetlin\compile\Tsetlin machine.v from m:\TFE4152-Project\Digital\tsetlin\src\Tsetlin machine.bde ...
+# Generation successful
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 combinatorics.v : (50, 10): Implicit net declaration, symbol notb1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (51, 7): Implicit net declaration, symbol t1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (52, 7): Implicit net declaration, symbol t2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (53, 10): Implicit net declaration, symbol notb2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (54, 7): Implicit net declaration, symbol t3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (57, 12): Implicit net declaration, symbol notbeta has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (58, 7): Implicit net declaration, symbol u1 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (59, 7): Implicit net declaration, symbol u2 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (60, 10): Implicit net declaration, symbol notb0 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (61, 7): Implicit net declaration, symbol u3 has not been declared in module combinatorics.
+# Info: VCP2876 combinatorics.v : (64, 7): Implicit net declaration, symbol v1 has not been declared in module combinator

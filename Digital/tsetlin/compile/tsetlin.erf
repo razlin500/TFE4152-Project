@@ -6,6 +6,21 @@ UPDATEPROGRESS 17
 UPDATEPROGRESS 26
 UPDATEPROGRESS 35
 MESSAGE "Pass 2. Processing instantiations."
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol notb1 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 50  10
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol t1 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 51  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol t2 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 52  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol notb2 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 53  10
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol t3 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 54  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol notbeta has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 57  12
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol u1 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 58  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol u2 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 59  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol notb0 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 60  10
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol u3 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 61  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol v1 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 64  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol v2 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 65  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol v3 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 66  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol w1 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 69  7
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol w2 has not been declared in module combinatorics." "m:/TFE4152-Project/Digital/tsetlin/src/combinatorics.v" 70  7
 UPDATEPROGRESS 45
 MESSAGE "Pass 3. Processing behavioral statements."
 UPDATEPROGRESS 80
