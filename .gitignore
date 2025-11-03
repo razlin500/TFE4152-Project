@@ -2,4 +2,4 @@
 
 !.gitignore
 !./Analog
-!./Digital/*.wsw
+!./Digital/TFE4152.wsw

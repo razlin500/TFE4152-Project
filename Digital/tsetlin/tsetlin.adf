@@ -54,11 +54,13 @@ DESIGNS=
 /register.v=-1
 /getAlpha.v=-1
 /D_FlipFlop.v=-1
+/D_flip_flop.v=-1
 [Files.Data]
 .\src\combinatorics.v=Verilog Source Code
 .\src\register.v=Verilog Source Code
 .\src\getAlpha.v=Verilog Source Code
 .\src\D_FlipFlop.v=Verilog Source Code
+.\src\D_flip_flop.v=Verilog Source Code
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]

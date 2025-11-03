@@ -2,3 +2,4 @@
 .\src\register.v
 .\src\getAlpha.v
 .\src\D_FlipFlop.v
+.\src\D_flip_flop.v
