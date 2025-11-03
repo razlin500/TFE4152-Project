@@ -1,4 +1,10 @@
-Analog/
-*/compile
-*/log
-Digital/tsetlin/tsetlin/
+**/compile
+**/log
+*.set
+*.order
+*.cfg
+*.ini
+*.adf
+*.wsp
+Digital/TsetlinMachine/TsetlinMachine/TsetlinMachine
+*.aws
