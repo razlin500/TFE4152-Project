@@ -17,31 +17,35 @@
 // Description : 
 //
 //-----------------------------------------------------------------------------
-`timescale 1 ns / 1 ps
+//Comment out when using as module
+//`timescale 1 ns / 1 ps
 
 //{{ Section below this comment is automatically maintained
 //   and may be overwritten
 //{module {D_FlipFlop}}
-module D_FlipFlop ( D ,Q , not_Q ,clk );
+module D_FlipFlop (input D , 
+	input clk, 
+	output Q);
 
-output Q;
-wire Q;
-input D;
-wire D;
-input clk;
-wire clk;
-output not_Q;
-wire not_Q;
 
 //}} End of automatically maintained section
 
 not(not_D, D);
+not(not_clk, clk);
 
-nand(t1, D, CLK);
-nand(t2, not_D, CLK);
+nand(t1, D, not_clk);
+nand(t2, not_D, not_clk);
 
-nand(Q, t1, t4);
-nand(not_Q, Q, t2);
+nand(t3, t1, t4);
+nand(t4, t3, t2);
+
+not(not_t3, t3);
+
+nand(t5, t3, clk);
+nand(t6, not_t3, clk);
+
+nand(Q, t5, t8);
+nand(t8, t6, Q);
 
 // -- Enter your statements here -- //
 

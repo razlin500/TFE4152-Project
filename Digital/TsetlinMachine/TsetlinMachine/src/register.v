@@ -17,33 +17,37 @@
 // Description : 
 //
 //-----------------------------------------------------------------------------
-`timescale 1 ns / 1 ps
+//Comment out when using as module
+//`timescale 1 ns / 1 ps
 
 //{{ Section below this comment is automatically maintained
 //   and may be overwritten
 //{module {register}}
-module register ( b2 ,b1 ,b0 ,b2o ,b1o ,b0o ,clk );
-
-output b2o ;
-wire b2o ;
-output b1o ;
-wire b1o ;
-output b0o ;
-wire b0o ;
-
-input b2 ;
-wire b2 ;
-input b1 ;
-wire b1 ;
-input b0 ;
-wire b0 ;
-input clk ;
-wire clk ;
+module register (input b2 ,
+	input b1 ,
+	input b0 ,
+	output b2o ,
+	output b1o ,
+	output b0o ,
+	input clk );
 
 //}} End of automatically maintained section
+
+`include "D_FlipFlop.v"
+	D_FlipFlop u2 (.D(b2), 
+	.clk(clk), 
+	.Q(b2o));
+	D_FlipFlop u1 (.D(b1), 
+	.clk(clk), 
+	.Q(b1o));
+	D_FlipFlop u0 (.D(b0), 
+	.clk(clk), 
+	.Q(b0o));
+	
+endmodule
+
 
 
 
 // -- Enter your statements here -- //
 
-endmodule

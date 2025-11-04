@@ -17,7 +17,8 @@
 // Description : 
 //
 //-----------------------------------------------------------------------------
-`timescale 1 ns / 1 ps
+//Comment out when using as module
+//`timescale 1 ns / 1 ps
 
 //{{ Section below this comment is automatically maintained
 //   and may be overwritten
