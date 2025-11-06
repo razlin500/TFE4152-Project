@@ -9,3 +9,8 @@
 Digital/TsetlinMachine/TsetlinMachine/TsetlinMachine
 *.aws
 *.asdb
+*.str
+*.ctf
+*.bak
+*.rpt
+**/wave.asdbw
