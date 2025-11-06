@@ -14,3 +14,4 @@ Digital/TsetlinMachine/TsetlinMachine/TsetlinMachine
 *.bak
 *.rpt
 **/wave.asdbw
+*.duser
