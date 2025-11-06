@@ -26,9 +26,11 @@
 module register (input b2 ,
 	input b1 ,
 	input b0 ,
+	input alpha,
 	output b2o ,
 	output b1o ,
 	output b0o ,
+	output alphaOut,
 	input clk );
 
 //}} End of automatically maintained section
@@ -43,6 +45,9 @@ module register (input b2 ,
 	D_FlipFlop u0 (.D(b0), 
 	.clk(clk), 
 	.Q(b0o));
+	D_FlipFlop alpha_Flip (.D(alpha), 
+	.clk(clk),
+	.Q(alphaOut));
 	
 endmodule
 
