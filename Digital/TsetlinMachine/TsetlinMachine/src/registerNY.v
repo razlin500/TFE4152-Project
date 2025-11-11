@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------
 //
-// Title       : register
+// Title       : registerNY
 // Design      : tsetlin
 // Author      : 
 // Company     : 
@@ -22,15 +22,17 @@
 
 //{{ Section below this comment is automatically maintained
 //   and may be overwritten
-//{module {register}}
-module register (input b2 ,
+//{module {registerNY}}
+module registerNY2 (input b2 ,
 	input b1 ,
 	input b0 ,
 	input alpha,
+	input beta,
 	output b2o ,
 	output b1o ,
 	output b0o ,
 	output alphaOut,
+	output betaOut,
 	input clk );
 
 //}} End of automatically maintained section
@@ -47,7 +49,10 @@ module register (input b2 ,
 	.Q(b0o));
 	D_FlipFlop alpha_Flip (.D(alpha), 
 	.clk(clk),
-	.Q(alphaOut));
+	.Q(alphaOut));	
+	D_FlipFlop beta_Flip (.D(beta), 
+	.clk(clk),
+	.Q(betaOut));
 	
 endmodule
 

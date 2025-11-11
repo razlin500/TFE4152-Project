@@ -33,7 +33,7 @@ module totalMachine (output alphaz ,
 // Enter your statements here //
 
 `include "combinatorics.v"
-`include "register.v"
+`include "register2.v"
 //module combinatorics ( beta ,b2 ,b1 ,b0 ,b2o ,b1o ,b0o , alpha);
 combinatorics c (.beta(beta), 
 				.b2(bz2), 
