@@ -52,5 +52,9 @@ module flipflop2 (
     // Add reset into the feedback latch
     nand (Q_int, t5, t8, not_reset);  // If reset=1, Q_int forced low
     nand (t8, t6, Q_int);
+
+    // Output buffer (optional)
+    buf (Q, Q_int);
+
 endmodule
 

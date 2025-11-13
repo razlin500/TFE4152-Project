@@ -23,7 +23,7 @@
 //{{ Section below this comment is automatically maintained
 //   and may be overwritten
 //{module {registerNY}}
-module registerNY3 (
+module registerNY2 (
     input  b2,
     input  b1,
     input  b0,
