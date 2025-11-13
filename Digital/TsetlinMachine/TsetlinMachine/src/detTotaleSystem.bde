@@ -2,7 +2,7 @@ SCHM0105
 
 HEADER
 {
- FREEID 1276
+ FREEID 1357
  VARIABLES
  {
   #BLOCKTABLE_FILE="#table.bde"
@@ -14,65 +14,6 @@ HEADER
   CREATIONDATE="11/6/2025"
   PAGECOUNT="2"
   TITLE="detTotaleSystem"
- }
- SYMBOL "#default" "CLK" "CLK"
- {
-  HEADER
-  {
-   VARIABLES
-   {
-    #CUSTOM_NAME=""
-    #LANGUAGE="VERILOG"
-    #MODIFIED="1762418380"
-    #NAME="CLK"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="0c2119fc-cd71-42fb-a33f-8149e9f085fd"
-   }
-  }
-  PAGE "" 
-  {
-   PAGEHEADER
-   {
-    RECT (0,0,160,80)
-    FREEID 4
-   }
-   
-   BODY
-   {
-    RECT  1, -1, 0
-    {
-     VARIABLES
-     {
-      #OUTLINE_FILLING="1"
-     }
-     AREA (20,0,140,80)
-    }
-    TEXT  3, 0, 0
-    {
-     TEXT "$#NAME"
-     RECT (110,30,135,54)
-     ALIGN 6
-     MARGINS (1,1)
-     PARENT 2
-    }
-    PIN  2, 0, 0
-    {
-     COORD (160,40)
-     VARIABLES
-     {
-      #DIRECTION="OUT"
-      #LENGTH="20"
-      #NAME="clk"
-      #VERILOG_TYPE="reg"
-     }
-     LINE  2, 0, 0
-     {
-      OUTLINE 0,1, (0,0,255)
-      POINTS ( (-20,0), (0,0) )
-      FILL (1,(0,0,0),0)
-     }
-    }
-   }
-  }
  }
  SYMBOL "#default" "combinatorics" "combinatorics"
  {
@@ -317,7 +258,7 @@ HEADER
     #CUSTOM_NAME=""
     #DESCRIPTION=""
     #LANGUAGE="VERILOG"
-    #MODIFIED="1762860199"
+    #MODIFIED="1763021514"
     #NAME="registerNY2"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="b06e151c-0dcf-459b-a7b9-531602f19d98"
    }
@@ -326,8 +267,8 @@ HEADER
   {
    PAGEHEADER
    {
-    RECT (0,0,200,280)
-    FREEID 24
+    RECT (0,-20,200,340)
+    FREEID 26
    }
    
    BODY
@@ -338,7 +279,7 @@ HEADER
      {
       #OUTLINE_FILLING="1"
      }
-     AREA (20,0,180,280)
+     AREA (20,0,180,320)
     }
     TEXT  3, 0, 0
     {
@@ -428,6 +369,14 @@ HEADER
      MARGINS (1,1)
      PARENT 22
     }
+    TEXT  25, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,270,70,294)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 24
+    }
     PIN  2, 0, 0
     {
      COORD (0,40)
@@ -436,7 +385,6 @@ HEADER
       #DIRECTION="IN"
       #LENGTH="20"
       #NAME="b2"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -453,7 +401,6 @@ HEADER
       #DIRECTION="OUT"
       #LENGTH="20"
       #NAME="b2o"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -470,7 +417,6 @@ HEADER
       #DIRECTION="IN"
       #LENGTH="20"
       #NAME="b1"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -487,7 +433,6 @@ HEADER
       #DIRECTION="OUT"
       #LENGTH="20"
       #NAME="b1o"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -504,7 +449,6 @@ HEADER
       #DIRECTION="IN"
       #LENGTH="20"
       #NAME="b0"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -521,7 +465,6 @@ HEADER
       #DIRECTION="OUT"
       #LENGTH="20"
       #NAME="b0o"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -538,7 +481,6 @@ HEADER
       #DIRECTION="IN"
       #LENGTH="20"
       #NAME="alpha"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -555,7 +497,6 @@ HEADER
       #DIRECTION="OUT"
       #LENGTH="20"
       #NAME="alphaOut"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -572,7 +513,6 @@ HEADER
       #DIRECTION="IN"
       #LENGTH="20"
       #NAME="beta"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -589,7 +529,6 @@ HEADER
       #DIRECTION="OUT"
       #LENGTH="20"
       #NAME="betaOut"
-      #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
      {
@@ -606,6 +545,22 @@ HEADER
       #DIRECTION="IN"
       #LENGTH="20"
       #NAME="clk"
+     }
+     LINE  2, 0, 0
+     {
+      OUTLINE 0,1, (0,0,255)
+      POINTS ( (0,0), (20,0) )
+      FILL (1,(0,0,0),0)
+     }
+    }
+    PIN  24, 0, 0
+    {
+     COORD (0,280)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #NAME="reset"
       #VERILOG_TYPE="wire"
      }
      LINE  2, 0, 0
@@ -710,36 +665,6 @@ PAGE ""
   NET WIRE  126, 0, 0
   NET WIRE  224, 0, 0
   NET WIRE  320, 0, 0
-  INSTANCE  458, 0, 0
-  {
-   VARIABLES
-   {
-    #COMPONENT="CLK"
-    #CUSTOM_NAME=""
-    #LIBRARY="#default"
-    #REFERENCE="U3"
-    #SYMBOL="CLK"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="0c2119fc-cd71-42fb-a33f-8149e9f085fd"
-   }
-   COORD (680,720)
-   VERTEXES ( (2,1200) )
-  }
-  TEXT  459, 0, 0
-  {
-   TEXT "$#REFERENCE"
-   RECT (680,684,719,719)
-   ALIGN 8
-   MARGINS (1,1)
-   PARENT 458
-  }
-  TEXT  460, 0, 0
-  {
-   TEXT "$#COMPONENT"
-   RECT (680,800,738,835)
-   MARGINS (1,1)
-   PARENT 458
-  }
-  NET WIRE  463, 0, 0
   INSTANCE  675, 0, 0
   {
    VARIABLES
@@ -752,20 +677,13 @@ PAGE ""
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="b06e151c-0dcf-459b-a7b9-531602f19d98"
    }
    COORD (700,360)
-   VERTEXES ( (4,1138), (6,1080), (8,1134), (10,1082), (12,1130), (20,1177), (22,1199), (14,1210), (18,1225), (2,1244), (16,1254) )
+   VERTEXES ( (2,1244), (4,1138), (6,1080), (8,1134), (10,1082), (12,1130), (14,1210), (16,1254), (18,1225), (20,1177), (22,1284), (24,1337) )
   }
   TEXT  676, 0, 0
   {
    TEXT "$#REFERENCE"
-   RECT (700,324,739,359)
+   RECT (700,304,739,339)
    ALIGN 8
-   MARGINS (1,1)
-   PARENT 675
-  }
-  TEXT  677, 0, 0
-  {
-   TEXT "$#COMPONENT"
-   RECT (700,640,856,675)
    MARGINS (1,1)
    PARENT 675
   }
@@ -943,55 +861,6 @@ PAGE ""
    NET 1179
    VTX 1182, 1178
   }
-  VTX  1199, 0, 0
-  {
-   COORD (700,600)
-  }
-  VTX  1200, 0, 0
-  {
-   COORD (840,760)
-  }
-  VTX  1201, 0, 0
-  {
-   COORD (640,600)
-  }
-  WIRE  1202, 0, 0
-  {
-   NET 463
-   VTX 1199, 1201
-  }
-  VTX  1203, 0, 0
-  {
-   COORD (640,700)
-  }
-  WIRE  1204, 0, 0
-  {
-   NET 463
-   VTX 1201, 1203
-  }
-  VTX  1205, 0, 0
-  {
-   COORD (860,700)
-  }
-  WIRE  1206, 0, 0
-  {
-   NET 463
-   VTX 1203, 1205
-  }
-  VTX  1207, 0, 0
-  {
-   COORD (860,760)
-  }
-  WIRE  1208, 0, 0
-  {
-   NET 463
-   VTX 1205, 1207
-  }
-  WIRE  1209, 0, 0
-  {
-   NET 463
-   VTX 1207, 1200
-  }
   VTX  1210, 0, 0
   {
    COORD (700,520)
@@ -1117,6 +986,80 @@ PAGE ""
    VTX 1225, 1226
   }
   NET WIRE  1275, 0, 0
+  INSTANCE  1278, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="clk"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VERILOG_DELAY=""
+    #VERILOG_TYPE="wire"
+   }
+   COORD (700,600)
+   VERTEXES ( (2,1285) )
+  }
+  TEXT  1279, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (611,583,649,618)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 1278
+  }
+  VTX  1284, 0, 0
+  {
+   COORD (700,600)
+  }
+  VTX  1285, 0, 0
+  {
+   COORD (700,600)
+  }
+  WIRE  1303, 0, 0
+  {
+   NET 1304
+   VTX 1284, 1285
+  }
+  NET WIRE  1304, 0, 0
+  INSTANCE  1310, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="reset"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+   }
+   COORD (700,660)
+   VERTEXES ( (2,1338) )
+  }
+  TEXT  1311, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (582,643,649,678)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 1310
+  }
+  NET WIRE  1314, 0, 0
+  VTX  1337, 0, 0
+  {
+   COORD (700,640)
+  }
+  VTX  1338, 0, 0
+  {
+   COORD (700,660)
+  }
+  WIRE  1339, 0, 0
+  {
+   NET 1314
+   VTX 1337, 1338
+  }
  }
  
 }
@@ -1144,7 +1087,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  1257, 0, 0
+  TEXT  1340, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1155,7 +1098,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1258, 0, 0
+  TEXT  1341, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -1166,7 +1109,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1259, 0, 0
+  TEXT  1342, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -1176,7 +1119,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1260, 0, 0
+  TEXT  1343, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1188,7 +1131,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1261, 0, 0
+  TEXT  1344, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -1201,7 +1144,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  1262, 0, 0
+  TEXT  1345, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -1211,7 +1154,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1263, 0, 0
+  TEXT  1346, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1223,7 +1166,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1264, 0, 0
+  TEXT  1347, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -1233,7 +1176,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1265, 0, 0
+  TEXT  1348, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -1244,7 +1187,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  1266, 0, 0
+  GROUP  1349, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -1256,7 +1199,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1267, 0, 0
+  GROUP  1350, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -1268,7 +1211,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1268, 0, 0
+  GROUP  1351, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -1280,7 +1223,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1269, 0, 0
+  GROUP  1352, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -1292,7 +1235,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1270, 0, 0
+  GROUP  1353, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -1304,7 +1247,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1271, 0, 0
+  GROUP  1354, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -1315,7 +1258,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  1272, 0, 0
+  GROUP  1355, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -1326,7 +1269,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  1273, 0, 0
+  BMPPICT  1356, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

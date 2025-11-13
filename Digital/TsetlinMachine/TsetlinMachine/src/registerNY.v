@@ -23,36 +23,30 @@
 //{{ Section below this comment is automatically maintained
 //   and may be overwritten
 //{module {registerNY}}
-module registerNY2 (input b2 ,
-	input b1 ,
-	input b0 ,
-	input alpha,
-	input beta,
-	output b2o ,
-	output b1o ,
-	output b0o ,
-	output alphaOut,
-	output betaOut,
-	input clk );
+module registerNY3 (
+    input  b2,
+    input  b1,
+    input  b0,
+    input  alpha,
+    input  beta,
+	input reset,
+    output b2o,
+    output b1o,
+    output b0o,
+    output alphaOut,
+    output betaOut,
+    input  clk
+);
 
 //}} End of automatically maintained section
 
-`include "D_FlipFlop.v"
-	D_FlipFlop u2 (.D(b2), 
-	.clk(clk), 
-	.Q(b2o));
-	D_FlipFlop u1 (.D(b1), 
-	.clk(clk), 
-	.Q(b1o));
-	D_FlipFlop u0 (.D(b0), 
-	.clk(clk), 
-	.Q(b0o));
-	D_FlipFlop alpha_Flip (.D(alpha), 
-	.clk(clk),
-	.Q(alphaOut));	
-	D_FlipFlop beta_Flip (.D(beta), 
-	.clk(clk),
-	.Q(betaOut));
+
+`include "flipflop2.v"
+flipflop2 u2 (.D(b2), .clk(clk), .reset(reset), .Q(b2o));
+flipflop2 u1 (.D(b1), .clk(clk), .reset(reset), .Q(b1o));
+flipflop2 u0 (.D(b0), .clk(clk), .reset(reset), .Q(b0o));
+flipflop2 alpha_Flip (.D(alpha), .clk(clk), .reset(reset), .Q(alphaOut));
+flipflop2 beta_Flip  (.D(beta),  .clk(clk), .reset(reset), .Q(betaOut));
 	
 endmodule
 
