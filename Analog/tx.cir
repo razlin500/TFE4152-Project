@@ -1,0 +1,34 @@
+[aimspice]
+[description]
+485
+*Current mirror - Three variations in one program
+
+.include p18_cmos_models_ss.inc
+.param length=0.18u width=1.3u scale=1.1 size=15
+
+* Circuit 1: Iin = 40u
+Vout 6 0 1V
+Vdd 1 0 1V
+Ibias 1 2 35u
+Iin 1 4 40u
+M1a 6 2 7 0 NMOS L={2*size*length} W={size*width}
+M2a 7 4 0 0 NMOS L={size*length} W={size*width}
+M3a 5 4 0 0 NMOS L={size*length} W={size*width}
+M4a 4 2 5 0 NMOS L={2*size*length} W={size*width}
+M5a 2 2 0 0 NMOS L={scale*length} W={scale*width/5}
+
+.plot id(M1a)
+
+[options]
+2
+Gmin 10E-12
+Temp 0
+[dc]
+1
+Iin
+38u
+52u
+0.01u
+[ana]
+1 0
+[end]
