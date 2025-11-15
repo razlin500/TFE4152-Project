@@ -1,0 +1,77 @@
+timestamp=1763200231174
+
+[~A]
+LastVerilogToplevel=CLK
+M:/DAIK_CURRENT/Digital/TsetlinMachine/Tsetlin2/src/d_flipflop.v_flipflop2.v_dettotalesystem.v_registerny.v_clk.v_combinatorics.v=0*5962*7684
+ModifyID=5
+Version=73
+
+[$root]
+A/$root=22|||1*16362
+BinI32/$root=3*2578
+SLP=3*2682
+Version=10.2.3312.5682  (Windows)|00000031789cd3f53752d0cd51700c0af18c3057d02d33ca36c54f020038800cc5|c73a565f2ade592f8ac1c68f484c9216fe248127da24ff7382361d32228ba1cd
+
+[CLK]
+A/CLK=22|./../src/clk.v|25|1*32014
+BinI32/CLK=3*4520
+R=./../src/clk.v|25
+SLP=3*4987
+Version=10.2.3312.5682  (Windows)|00000031789cd3f53752d0cd51700c0af18c3057d02d33ca36c54f020038800cc5|9ffd05d447385e8216957147fb852eeb2aff8289e92284fe3fa0cf391d6f086c
+
+[D_FlipFlop]
+A/D_FlipFlop=22|./../src/d_flipflop.v|26|1*16768
+BinI32/D_FlipFlop=3*2750
+R=./../src/d_flipflop.v|26
+SLP=3*3168
+Version=10.2.3312.5682  (Windows)|00000031789cd3f53752d0cd51700c0af18c3057d02d33ca36c54f020038800cc5|a9f752ede81cfc90fea4f85562f0eee71edfb7fdce36a9564b5b103ac6ef414acc9de4f45833d492dabcdcd56a44e25f
+
+[\registerNY2 flipflop2 \]
+A/\registerNY2 flipflop2 \=22|./../src/flipflop2.v|25|1*28926
+BinI32/\registerNY2 flipflop2 \=3*4266
+R=./../src/flipflop2.v|25
+SLP=3*4389
+Version=10.2.3312.5682  (Windows)|00000031789cd3f53752d0cd51700c0af18c3057d02d33ca36c54f020038800cc5|c14a5fe925eb2e1a524252aaac6c0945ec46d93e61dac7f0f23f46645f0ab993e5f53674f3a7aeb8993b2406d54c965a6b1461080b3da9ac5dd9d61b8195c3ff
+
+[combinatorics]
+A/combinatorics=22|./../src/combinatorics.v|26|1*22548
+BinI32/combinatorics=3*3798
+R=./../src/combinatorics.v|26
+SLP=3*3910
+Version=10.2.3312.5682  (Windows)|00000031789cd3f53752d0cd51700c0af18c3057d02d33ca36c54f020038800cc5|f1821bc3032ac9d1de6806d4081f9687329837c966d254995ac8ec951a2a0b371d2b59b23ce51b01b0f94ce3c6abca26
+
+[detTotaleSystem]
+A/detTotaleSystem=24|.\..\src\dettotalesystem.bde|10000|1*20736
+BinI32/detTotaleSystem=3*3571
+R=.\..\src\dettotalesystem.bde|25
+SLP=3*3685
+Version=10.2.3312.5682  (Windows)|00000031789cd3f53752d0cd51700c0af18c3057d02d33ca36c54f020038800cc5|a8f82a70fd1b34bcd17807eea636c2688f19c5b119824c8f4859c280eb8f7a5b90a0ec5addcd0eae324a9a439e6ece14
+
+[flipflop2]
+A/flipflop2=22|./../src/flipflop2.v|25|1*17731
+BinI32/flipflop2=3*3362
+R=./../src/flipflop2.v|25
+SLP=3*3470
+Version=10.2.3312.5682  (Windows)|00000031789cd3f53752d0cd51700c0af18c3057d02d33ca36c54f020038800cc5|99acaff481f490af9a28b7519dab206e359fb6f46c3af9659d7e6da92c666cb4ab319f083a8df602c96eea16f841a682
+
+[registerNY2]
+A/registerNY2=22|./../src/registerny.v|26|1*27069
+BinI32/registerNY2=3*4031
+R=./../src/registerny.v|26
+SLP=3*4141
+Version=10.2.3312.5682  (Windows)|00000031789cd3f53752d0cd51700c0af18c3057d02d33ca36c54f020038800cc5|70d6c1776b88d8b7f9ff6a9381666bbe0567468bf2adb1b4cd552ea9785954781c4aa70ab9b7e129761cf61394be02cd
+
+[~MFT]
+0=12|0Tsetlin2.mgf|7684|2444
+1=16|1Tsetlin2.mgf|32014|16362
+3=32|3Tsetlin2.mgf|4987|2578
+
+[~U]
+$root=12|0*4203|
+CLK=12|0*5807||0x10
+D_FlipFlop=12|0*4433||0x10
+\registerNY2 flipflop2 \=12|0*5580|
+combinatorics=12|0*5085|
+detTotaleSystem=12|0*4821||0x10
+flipflop2=12|0*4625||0x10
+registerNY2=12|0*5314|
