@@ -1,0 +1,17 @@
+**/compile
+**/log
+*.set
+*.order
+*.cfg
+*.ini
+*.adf
+*.wsp
+Digital/TsetlinMachine/TsetlinMachine/TsetlinMachine
+*.aws
+*.asdb
+*.str
+*.ctf
+*.bak
+*.rpt
+**/wave.asdbw
+*.duser
