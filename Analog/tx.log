@@ -7,7 +7,7 @@
                  *                                           *
                  *********************************************
 
-	Date: Sat Nov 15 13:07:07 2025
+	Date: Sun Nov 16 14:04:10 2025
 	Circuit File: C:\Users\razli\ikke_onedrive\H2025\TFE4152\TFE4152-Project\Analog\tx.cir
 	Analysis: DC Transfer Curves
 
@@ -100,7 +100,7 @@
     85:  
     86:  *end of: p18_model_card.inc
     87:  *end of: p18_cmos_models_ss.inc
-    88:  .param length=0.18u width=1.3u scale=1.1 size=15
+    88:  .param length=0.18u width=1.3u scale=1 size=15
     89:  
     90:  * Circuit 1: Iin = 40u
     91:  Vout 6 0 1V
@@ -115,7 +115,7 @@
    100:  
    101:  .plot id(M1a)
    102:  
-   103:  .dc Iin 38u 52u 0.01u
+   103:  .dc Vout 0 1 0.01 Iin 40u 50u 5u
 
 ***************************  Model Parameters  ****************************
 
@@ -126,10 +126,14 @@
 
 **************************  Analysis Parameters  **************************
 
-	Source name #1 .. : Iin
-	Start value #1 .. : 38u
-	End value #1 .... : 52u
-	Increment value #1: 0.01u
+	Source name #1 .. : Vout
+	Start value #1 .. : 0
+	End value #1 .... : 1
+	Increment value #1: 0.01
+	Source name #2 .. : Iin
+	Start value #2 .. : 40u
+	End value #2 .... : 50u
+	Increment value #2: 5u
 
 
 
@@ -141,10 +145,10 @@
 
 *************************  Simulation Statistics  *************************
 
-	Total number of iterations...........: 2893
-	Total analysis time (sec)............: 0.042
-	Time spent in device loading (sec)...: 0.011
-	Time spent in L-U decomposition (sec): 0.001
+	Total number of iterations...........: 876
+	Total analysis time (sec)............: 0.009
+	Time spent in device loading (sec)...: 0.002
+	Time spent in L-U decomposition (sec): 0
 	Time spent in matrix reordering (sec): 0
 	Time spent in matrix solving (sec)...: 0
 
@@ -161,6 +165,8 @@ Warning: Pd = 0 is less than W for m4a in model nmos.
 Warning: Ps = 0 is less than W for m4a in model nmos.
 Warning: Pd = 0 is less than W for m3a in model nmos.
 Warning: Ps = 0 is less than W for m3a in model nmos.
+Warning: singular matrix:  check nodes m4a#drain and m4a#drain
+
 Warning: singular matrix:  check nodes m4a#drain and m4a#drain
 
 Warning: singular matrix:  check nodes m4a#drain and m4a#drain

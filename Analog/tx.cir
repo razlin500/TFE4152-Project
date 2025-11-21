@@ -1,10 +1,10 @@
 [aimspice]
 [description]
-485
+483
 *Current mirror - Three variations in one program
 
 .include p18_cmos_models_ss.inc
-.param length=0.18u width=1.3u scale=1.1 size=15
+.param length=0.18u width=1.3u scale=1 size=15
 
 * Circuit 1: Iin = 40u
 Vout 6 0 1V
@@ -24,11 +24,15 @@ M5a 2 2 0 0 NMOS L={scale*length} W={scale*width/5}
 Gmin 10E-12
 Temp 0
 [dc]
+2
+Vout
+0
 1
+0.01
 Iin
-38u
-52u
-0.01u
+40u
+50u
+5u
 [ana]
 1 0
 [end]
